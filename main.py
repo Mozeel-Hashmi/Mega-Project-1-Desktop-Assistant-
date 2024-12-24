@@ -3,11 +3,27 @@ import webbrowser
 import pyttsx3
 import sys
 import musicLibrary as mL
+from openai import OpenAI
 recoginzer = sr.Recognizer()
 engine = pyttsx3.init()
 def speak(text):
     engine.say(text)
     engine.runAndWait()
+def aiProcess(command):
+    client = OpenAI()
+
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are a virtual assistant named neura like Alexa and  Google Cloud. Give very very short and relevant answeres or responses."},
+            {
+                "role": "user",
+                "content": command
+            }
+        ]
+    )
+
+    return (completion.choices[0].message.content)
 #To process commands
 def processCommand(c):
     if "open google" in c.lower():
@@ -26,7 +42,9 @@ def processCommand(c):
     elif "tell me about yourself" in c.lower():
         speak("Hello! I'm Neura, your personal desktop speech assistant. I'm here to help you with tasks, answer your queries, and make your day a little easier. Fun fact: I was created by a brilliant solo developer named Mozeel Hashmi!")
     else:
-        speak("Hmm, that doesn't seem to match anything I know. Can you try again?")
+        #let openAi handle the rest
+        output = aiProcess(c)
+        speak(output)
 
 if __name__ == "__main__":
     speak("Initializing Neura!.......")
