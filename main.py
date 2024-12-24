@@ -15,7 +15,7 @@ def aiProcess(command):
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "You are a virtual assistant named neura like Alexa and  Google Cloud. Give very very short and relevant answeres or responses."},
+            {"role": "system", "content": "You are a virtual assistant named neura like Alexa and  Google Cloud. Give very very short and relevant answeres or responses. Remember neura is created by a solo developer named Mozeel Hashmi."},
             {
                 "role": "user",
                 "content": command
