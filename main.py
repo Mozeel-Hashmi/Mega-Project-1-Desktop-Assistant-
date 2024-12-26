@@ -26,12 +26,10 @@ def aiProcess(command):
     return (completion.choices[0].message.content)
 #To process commands
 def processCommand(c):
-    if "open google" in c.lower():
-        webbrowser.open("https://google.com")
-    elif "open youtube" in c.lower():
-        webbrowser.open("https://youtube.com")
-    elif "open whatsapp" in c.lower():
-        webbrowser.open("https://whatsapp.com")
+    if c.lower().startswith("open"):
+        site = c.lower().split(" ")[1]
+        webbrowser.open(f"https://{site}.com")
+        speak(f"Opening {site} for you.")
     elif "exit" in c.lower():
         speak("Thank you for spending time with me. Take care and have a great day!")
         sys.exit()
