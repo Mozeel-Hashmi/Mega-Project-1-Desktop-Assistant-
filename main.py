@@ -36,9 +36,11 @@ def processCommand(c):
         speak("Thank you for spending time with me. Take care and have a great day!")
         sys.exit()
     elif c.lower().startswith("play"):
+        speak("Sure! Let me play that for you.")
         song = c.lower().split(" ")[1]
         link = mL.music[song]
         webbrowser.open(link)
+        speak(f"Now playing {song}")
     elif "tell me about yourself" in c.lower():
         speak("Hello! I'm Neura, your personal desktop speech assistant. I'm here to help you with tasks, answer your queries, and make your day a little easier. Fun fact: I was created by a brilliant solo developer named Mozeel Hashmi!")
     else:
