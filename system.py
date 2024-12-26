@@ -7,3 +7,11 @@ def op(arg):
         pt.click(704, 749, button="left")
         pt.moveTo(504, 457, duration=1)
         pt.click(button="left")
+    elif arg == "refresh":
+        pt.FAILSAFE = False
+        pt.moveTo(1365, 767, duration=2)
+        pt.click(button="left")
+        pt.moveTo(635, 377, duration=1)
+        pt.click(button="right")
+        pt.moveTo(684, 435, duration=1)
+        pt.click(button="left")
