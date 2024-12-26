@@ -3,6 +3,7 @@ import webbrowser
 import pyttsx3
 import sys
 import musicLibrary as mL
+import system as stm
 from openai import OpenAI
 recoginzer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -30,6 +31,10 @@ def processCommand(c):
         site = c.lower().split(" ")[1]
         webbrowser.open(f"https://{site}.com")
         speak(f"Opening {site} for you.")
+    elif c.lower().startswith("system"):
+        ap = c.lower().split(" ")[1]
+        stm.op(ap)
+
     elif "exit" in c.lower():
         speak("Thank you for spending time with me. Take care and have a great day!")
         sys.exit()
