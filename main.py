@@ -33,9 +33,12 @@ def processCommand(c):
         speak(f"Opening {site} for you.")
     elif c.lower().startswith("system"):
         ap = c.lower().split(" ")[1]
-        speak(ap)
-        stm.op(ap)
-        speak('Done!!')
+        if ap in stm.op:
+            speak(ap)
+            stm.op[ap]()
+            speak('Done!!')
+        else:
+            speak("No such task.")
 
     elif "exit" in c.lower():
         speak("Thank you for spending time with me. Take care and have a great day!")
