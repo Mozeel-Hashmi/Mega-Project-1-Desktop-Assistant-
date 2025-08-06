@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Neura Logo.png" alt="Neura Logo" width="200">
+  <img src="Neura Logo 2.png" alt="Neura Logo" width="200">
 </p>
 
 <h1 align="center">Neura Desktop Assistant</h1>
