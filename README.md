@@ -40,5 +40,5 @@ Powered by Python, Neura uses cutting-edge libraries to perform tasks, respond t
    pip install -r requirements.txt
 3. Run the Assistant
    ```bash
-   python neura.py
+   python main.py
 Let Neura transform your desktop experience!
