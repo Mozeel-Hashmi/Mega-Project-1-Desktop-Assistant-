@@ -1,12 +1,37 @@
-# Mega Project (Neura Desktop Assistant)
- Neura is an advanced desktop speech assistant designed to simplify your daily tasks and enhance productivity. Powered by Python, Neura leverages cutting-edge technology to perform tasks, provide information, and interact with users seamlessly.
-#Key Features
-Voice command recognition and response.
-Task automation for enhanced efficiency.
-Friendly and intuitive interaction.
-Customizable functionalities to suit user needs.
-About the Creator
-Neura is the brainchild of Mozeel Hashmi, a solo developer with a passion for creating innovative and intelligent systems.
+<p align="center">
+  <img src="Neura Logo.png" alt="Neura Logo" width="200">
+</p>
 
-#Get Started
-Clone this repository, set up the environment, and let Neura transform your desktop experience.
+<h1 align="center">Neura Desktop Assistant</h1>
+<p align="center">An intelligent voice-controlled assistant built with Python</p>
+
+---
+
+## 🌟 Mega Project – Neura Desktop Assistant
+
+**Neura** is an advanced desktop speech assistant designed to simplify your daily tasks and boost productivity.  
+Powered by Python, Neura uses cutting-edge libraries to perform tasks, respond to commands, and interact with users seamlessly.
+
+---
+
+## 🔑 Key Features
+
+- 🎙️ Voice command recognition and intelligent response  
+- ⚙️ Task automation for enhanced efficiency  
+- 🤖 Friendly and intuitive interaction  
+- 🧩 Modular and customizable functionalities  
+- 🖥️ Automates local desktop operations (file handling, reminders, web search, etc.)
+
+---
+
+## 👨‍💻 About the Creator
+
+**Neura** is developed by [Mozeel Hashmi](#), a solo Python developer passionate about building smart and helpful systems.
+
+---
+
+## 🚀 Get Started
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/neura.git
